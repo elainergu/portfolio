@@ -1,5 +1,5 @@
 html {
-    --color-accent: oklch(72% 22% 300);
+    --color-accent: oklch(70% 28% 300);
     accent-color: var(--color-accent);
 }
 
@@ -84,4 +84,17 @@ h5,
 h6 {
     line-height: 1.1;
     text-wrap: balance;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+article {
+    margin-bottom: 1.5em;
+}
+
+time {
+    color: gray;
+    font-size: 0.9em;
 }
