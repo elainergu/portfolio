@@ -38,7 +38,8 @@ nav a:hover {
 
 input,
 textarea,
-button {
+button,
+select {
     font: inherit;
 }
 
@@ -99,4 +100,11 @@ article {
 time {
     color: gray;
     font-size: 0.9em;
+}
+
+.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
 }
