@@ -108,3 +108,10 @@ time {
     right: 1rem;
     font-size: 80%;
 }
+
+.projects img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
