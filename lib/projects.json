@@ -2,73 +2,73 @@
     {
         "title": "DSC 106 - NYPD Allegations Unsubstantiated or Exonerated",
         "year": "2026",
-        "image": "/portfolio/images/proj2_for.png",
+        "image": "images/proj2_for.png",
         "description": "Visualized allegation outcomes to support the proposition that most were unsubstantiated or exonerated."
     },
     {
         "title": "DSC 106 - NYPD Allegations Substantiated",
         "year": "2026",
-        "image": "/portfolio/images/proj2_against.png",
+        "image": "images/proj2_against.png",
         "description": "Used selected allegation categories to present the opposing side of the proposition."
     },
     {
         "title": "DSC 106 - NYPD Allegations Unsubstantiated or Exonerated (2)",
         "year": "2026",
-        "image": "/portfolio/images/proj2_donut.png",
+        "image": "images/proj2_donut.png",
         "description": "Created a donut chart comparing unsubstantiated, exonerated, and substantiated allegations."
     },
     {
         "title": "DSC 106 - Processed Foods in Grocery Stores",
         "year": "2026",
-        "image": "/portfolio/images/proj1.png",
+        "image": "images/proj1.png",
         "description": "Created a grouped bar chart comparing processed snacks in different grocery stores."
     },
     {
         "title": "COGS 118D - Gambling Analysis",
         "year": "2026",
-        "image": "/portfolio/images/cogs118d_gamble.png",
+        "image": "images/cogs118d_gamble.png",
         "description": "Analyzed gambling behavior using statistical modeling."
     },
     {
         "title": "COGS 118D - Expected Value Analysis",
         "year": "2026",
-        "image": "/portfolio/images/cogs118d_ev.png",
+        "image": "images/cogs118d_ev.png",
         "description": "Visualized expected values from a statistical model."
     },
     {
         "title": "COGS 118D - Happiness by Player",
         "year": "2026",
-        "image": "/portfolio/images/cogs118d_happiness.png",
+        "image": "images/cogs118d_happiness.png",
         "description": "Compared happiness scores across players and groups."
     },
     {
         "title": "COGS 118D - Mixed Effects Analysis",
         "year": "2026",
-        "image": "/portfolio/images/cogs118d_mixedeffects.png",
+        "image": "images/cogs118d_mixedeffects.png",
         "description": "Compared OLS and mixed-effects models using grouped data."
     },
     {
         "title": "Design 100 - Physical Kiosk",
         "year": "2025",
-        "image": "/portfolio/images/design100.png",
+        "image": "images/design100.png",
         "description": "Created a miniature model of a physical kiosk design."
     },
     {
         "title": "DSGN 100 - Digital Interface",
         "year": "2025",
-        "image": "/portfolio/images/design100_digital.jpg",
+        "image": "images/design100_digital.jpg",
         "description": "Developed a mapping and user flow for a digital interface."
     },
     {
         "title": "WIP Design - Color Palette",
         "year": "2025",
-        "image": "/portfolio/images/color_palette.jpg",
+        "image": "images/color_palette.png",
         "description": "Designed a color theme and branding for WIP Marketplace."
     },
     {
         "title": "SYN 2 - Digital Art",
         "year": "2024",
-        "image": "/portfolio/images/syn100.jpg",
+        "image": "images/syn100.jpg",
         "description": "Created a digital painting exploring ideas of climate change through visual storytelling."
     }
 ]
