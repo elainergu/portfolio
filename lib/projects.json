@@ -1,62 +1,74 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
-        "image": "image": "../images/hawaii-project.png",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae minima ex quibusdam deserunt at! Minus quod magnam, reprehenderit, maiores temporibus officiis dolorem quam omnis aut sunt id saepe quia obcaecati."
+    "title": "DSC 106 - NYPD Allegations Unsubstantiated or Exonerated",
+    "year": "2026",
+    "image": "../images/proj2_for.png",
+    "description": "Visualized allegation outcomes to support the proposition that most were unsubstantiated or exonerated."
     },
     {
-        "title": "Animi pariatur corporis quas!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Aliquam quae labore et earum nulla hic obcaecati doloribus incidunt nam? Quis sit earum necessitatibus dolor suscipit distinctio exercitationem, consectetur fugiat laudantium, laboriosam eaque delectus nostrum nemo deserunt, iusto inventore."
+    "title": "DSC 106 - NYPD Allegations Substantiated",
+    "year": "2026",
+    "image": "../images/proj2_against.png",
+    "description": "Used selected allegation categories to present the opposing side of the proposition."
     },
     {
-        "title": "Ratione et quidem ullam!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Quod, doloribus velit. Veniam, omnis perferendis? Quam harum provident reprehenderit, modi consectetur mollitia ab rem, ullam ad deleniti explicabo dolorum, quibusdam blanditiis eveniet? Nostrum soluta doloremque dolorum quos ullam eos?"
+    "title": "DSC 106 - NYPD Allegations Unsubstantiated or Exonerated (2)",
+    "year": "2026",
+    "image": "../images/proj2_donut.png",
+    "description": "Created a donut chart comparing unsubstantiated, exonerated, and substantiated allegations."
     },
     {
-        "title": "Incidunt, illo explicabo? Distinctio.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Cumque eos sapiente tenetur nobis, consequatur consequuntur voluptate consectetur vitae adipisci incidunt minima repellat voluptatum, fuga sit expedita, commodi error amet beatae eum? Esse odio mollitia fugiat, vitae atque numquam!"
+    "title": "DSC 106 - Processed Foods in Grocery Stores",
+    "year": "2026",
+    "image": "../images/proj1.png",
+    "description": "Created a multi bar chart comparing processed snacks in different grocery stores."
     },
     {
-        "title": "Cumque a deleniti pariatur.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Et, aliquid odio. Quos sapiente eaque corporis quaerat consectetur sit! Cupiditate nemo explicabo rem! Error nulla praesentium libero tenetur assumenda ad, doloribus sunt vel ipsa, dignissimos dicta quam porro quod?"
+    "title": "COGS 118D - Gambling Analysis",
+    "year": "2026",
+    "image": "../images/cogs118d_gamble.png",
+    "description": "Analyzed gambling behavior using statistical modeling."
     },
     {
-        "title": "Eum sed laborum quod!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Possimus cupiditate saepe voluptatem optio nobis est similique? Eos itaque, ipsam est consequuntur cumque quisquam consequatur, quia repellendus nemo sapiente, atque et quas provident a blanditiis cupiditate repudiandae labore suscipit."
+    "title": "COGS 118D - Expected Value Analysis",
+    "year": "2026",
+    "image": "../images/cogs118d_ev.png",
+    "description": "Visualized expected values from a statistical model."
     },
     {
-        "title": "In nemo deleniti rerum!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Nobis veritatis corporis, distinctio adipisci natus repellat? Exercitationem enim vitae consequatur hic sequi at nostrum molestias, iusto illum. Necessitatibus cumque qui et voluptatum nihil sequi modi porro illum vitae ex."
+    "title": "COGS 118D - Happiness by Player",
+    "year": "2026",
+    "image": "../images/cogs118d_happiness.png",
+    "description": "Compared happiness scores across players and groups."
     },
     {
-        "title": "Officia quam accusantium voluptatum?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Quo, laboriosam saepe? Hic temporibus nostrum eveniet ipsa explicabo modi odit, debitis qui architecto alias veritatis aliquam quia corrupti repellendus. Ab inventore aut nam earum odio? In, porro! Fugit, quasi?"
+    "title": "COGS 118D - Mixed Effects Analysis",
+    "year": "2026",
+    "image": "../images/cogs118d_mixedeffects.png",
+    "description": "Compared OLS and mixed-effects models using grouped data."
     },
     {
-        "title": "Illo perferendis nesciunt possimus.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Tempora dolore velit laborum illo vitae eaque molestias, voluptates aut atque, iure mollitia voluptatem adipisci quidem harum, earum ipsum. Fugit, assumenda libero? Eum ducimus delectus corporis rem consectetur? Exercitationem, consequuntur."
+    "title": "Design 100 - Physical Kiosk",
+    "year": "2025",
+    "image": "../images/design100.png",
+    "description": "Created a miniature model of a physical kisok design."
     },
     {
-        "title": "Aspernatur reiciendis quisquam dolorum?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Tempore rem blanditiis qui possimus fugit maxime nobis ipsam veniam eum? Suscipit sed minus impedit provident nobis omnis tempora adipisci ipsam saepe, error dolorem, magnam sapiente cumque, itaque ullam cupiditate?"
+    "title": "DSGN 100 - Digital Interface",
+    "year": "2025",
+    "image": "../images/design100_digital.jpg",
+    "description": "Developed a mapping and user flow for a digital interface."
     },
     {
-        "title": "Non nostrum ipsam soluta!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Accusamus ex magni cumque laboriosam vero. Aut consectetur adipisci id, nam sit doloribus blanditiis praesentium? Ab facilis a odit nihil alias expedita fugiat culpa provident, temporibus, consectetur ex nam quae."
+    "title": "WIP Design - Color Palette",
+    "year": "2025",
+    "image": "../images/color palette.jpg",
+    "description": "Designed a color theme and branding for WIP Marketplace."
     },
     {
-        "title": "Inventore illo ea asperiores.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Voluptatem, itaque modi quis cumque fugit aliquid officia vero. Nisi excepturi exercitationem, vero accusamus officia mollitia cumque sunt natus. Doloremque iusto mollitia unde provident odio dignissimos officiis adipisci aliquid ipsam."
+    "title": "SYN 2 - Digital Art",
+    "year": "2024",
+    "image": "../images/syn100.jpg",
+    "description": "Created a digital painting exploring ideas of climate change through visual storytelling."
     }
 ]
