@@ -14,6 +14,8 @@ projectsTitle.textContent = `${projects.length} Projects`;
 
 let selectedIndex = -1;
 
+let currentProjects = projects;
+
 function renderPieChart(projectsGiven) {
     let rolledData = d3.rollups(
         projectsGiven,
@@ -68,7 +70,7 @@ function renderPieChart(projectsGiven) {
                 } else {
                     let selectedYear = data[selectedIndex].label;
 
-                    let filteredProjects = projects.filter(
+                    let filteredProjects = currentProjects.filter(
                         (project) => project.year == selectedYear
                     );
 
@@ -95,11 +97,11 @@ let searchInput = document.querySelector('.searchBar');
 searchInput.addEventListener('change', (event) => {
     query = event.target.value;
 
-    let filteredProjects = projects.filter((project) => {
+    currentProjects = projects.filter((project) => {
         let values = Object.values(project).join('\n').toLowerCase();
         return values.includes(query.toLowerCase());
     });
 
-    renderProjects(filteredProjects, projectsContainer, 'h2');
-    renderPieChart(filteredProjects);
+    renderProjects(currentProjects, projectsContainer, 'h2');
+    renderPieChart(currentProjects);
 });
