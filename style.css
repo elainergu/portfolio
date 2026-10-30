@@ -115,3 +115,9 @@ time {
     object-fit: contain;
     display: block;
 }
+
+#projects-pie-plot {
+    max-width: 20em;
+    margin-block: 2em;
+    overflow: visible;
+}
