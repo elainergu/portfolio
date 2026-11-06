@@ -1,8 +1,13 @@
 <h1>Meta</h1>
 <script type="module" src="main.js"></script>
 <div id="stats"></div>
+
 <h2>Commits by time of day</h2>
 <div id="chart"></div>
+
+<p id="selection-count">No commits selected</p>
+<dl id="language-breakdown" class="stats"></dl>
+
 <dl id="commit-tooltip" class="info tooltip" hidden>
     <dt>Commit</dt>
     <dd><a href="" id="commit-link" target="_blank"></a></dd>
@@ -19,4 +24,5 @@
     <dt>Lines edited</dt>
     <dd id="commit-lines"></dd>
 </dl>
+
 <link rel="stylesheet" href="../style.css">
