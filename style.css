@@ -169,3 +169,22 @@ time {
 .selected:is(path) {
     fill: var(--color);
 }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1em;
+}
+
+.stats dt {
+  grid-row: 1;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.stats dd {
+  grid-row: 2;
+  margin: 0;
+  font-size: 2em;
+}
