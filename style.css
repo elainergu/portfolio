@@ -188,3 +188,11 @@ time {
   margin: 0;
   font-size: 2em;
 }
+
+.gridlines line {
+  stroke: #ddd;
+}
+
+.gridlines path {
+  display: none;
+}
