@@ -1,46 +1,46 @@
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm';
 
 async function loadData() {
-  const data = await d3.csv('loc.csv', (row) => ({
-    ...row,
-    line: Number(row.line), // or just +row.line
-    depth: Number(row.depth),
-    length: Number(row.length),
-    date: new Date(row.date + 'T00:00' + row.timezone),
-    datetime: new Date(row.datetime),
-  }));
+    const data = await d3.csv('loc.csv', (row) => ({
+        ...row,
+        line: Number(row.line), 
+        depth: Number(row.depth),
+        length: Number(row.length),
+        date: new Date(row.date + 'T00:00' + row.timezone),
+        datetime: new Date(row.datetime),
+    }));
 
-  return data;
+    return data;
 }
 
 function processCommits(data) {
-  return d3
-    .groups(data, (d) => d.commit)
-    .map(([commit, lines]) => {
-      let first = lines[0];
-      let { author, date, time, timezone, datetime } = first;
+    return d3
+        .groups(data, (d) => d.commit)
+        .map(([commit, lines]) => {
+            let first = lines[0];
+            let { author, date, time, timezone, datetime } = first;
 
-      let ret = {
-        id: commit,
-        url: 'https://github.com/elainergu/portfolio/commit/' + commit,
-        author,
-        date,
-        time,
-        timezone,
-        datetime,
-        hourFrac: datetime.getHours() + datetime.getMinutes() / 60,
-        totalLines: lines.length,
-      };
+            let ret = {
+                id: commit,
+                url: 'https://github.com/elainergu/portfolio/commit/' + commit,
+                author,
+                date,
+                time,
+                timezone,
+                datetime,
+                hourFrac: datetime.getHours() + datetime.getMinutes() / 60,
+                totalLines: lines.length,
+            };
 
-      Object.defineProperty(ret, 'lines', {
-        value: lines,
-        enumerable: false,
-        writable: true,
-        configurable: true,
-      });
+            Object.defineProperty(ret, 'lines', {
+                value: lines,
+                enumerable: false,
+                writable: true,
+                configurable: true,
+            });
 
-      return ret;
-    });
+            return ret;
+        });
 }
 
 function renderCommitInfo(data, commits) {
@@ -99,7 +99,7 @@ function renderScatterPlot(data, commits) {
         .attr('transform', `translate(${usableArea.left}, 0)`);
 
     gridlines.call(
-    d3.axisLeft(yScale)
+        d3.axisLeft(yScale)
         .tickFormat('')
         .tickSize(-usableArea.width)
     );
@@ -113,7 +113,18 @@ function renderScatterPlot(data, commits) {
         .attr('cx', (d) => xScale(d.datetime))
         .attr('cy', (d) => yScale(d.hourFrac))
         .attr('r', 5)
-        .attr('fill', 'steelblue');
+        .attr('fill', 'steelblue')
+        .on('mouseenter', (event, commit) => {
+            renderTooltipContent(commit);
+            updateTooltipVisibility(true);
+            updateTooltipPosition(event);
+        })
+        .on('mousemove', (event) => {
+            updateTooltipPosition(event);
+        })
+        .on('mouseleave', () => {
+            updateTooltipVisibility(false);
+        });
 
     const xAxis = d3.axisBottom(xScale);
 
@@ -136,4 +147,31 @@ let data = await loadData();
 let commits = processCommits(data);
 
 renderCommitInfo(data, commits);
+
+function renderTooltipContent(commit) {
+    if (!commit) return;
+
+    const link = document.getElementById('commit-link');
+    link.href = commit.url;
+    link.textContent = commit.id;
+
+    document.getElementById('commit-date').textContent =
+        commit.datetime.toLocaleDateString('en', { dateStyle: 'full' });
+
+    document.getElementById('commit-time').textContent = commit.time;
+    document.getElementById('commit-author').textContent = commit.author;
+    document.getElementById('commit-lines').textContent = commit.totalLines;
+}
+
+function updateTooltipVisibility(isVisible) {
+    const tooltip = document.getElementById('commit-tooltip');
+    tooltip.hidden = !isVisible;
+}
+
+function updateTooltipPosition(event) {
+    const tooltip = document.getElementById('commit-tooltip');
+    tooltip.style.left = `${event.clientX + 12}px`;
+    tooltip.style.top = `${event.clientY + 12}px`;
+}
+
 renderScatterPlot(data, commits);
