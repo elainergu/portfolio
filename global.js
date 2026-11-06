@@ -82,14 +82,6 @@ form?.addEventListener('submit', function (event) {
     location.href = url;
 });
 
-// let navLinks = $$("nav a");
-
-// let currentLink = navLinks.find(
-//     (a) => a.host === location.host && a.pathname === location.pathname,
-// );
-
-// currentLink?.classList.add('current');
-
 export async function fetchJSON(url) {
     try {
         const response = await fetch(url);
